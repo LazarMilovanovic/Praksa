@@ -1,0 +1,152 @@
+body{
+  width: 1100px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+.navbar{
+ text-align: end;
+ padding-right: 10px;
+
+}
+h1{
+  margin: 5px;
+}
+p{
+  margin: 0;
+
+}
+
+.leva-strana{
+  padding-right: 20px;
+  border-right: 1px solid black;
+}
+.uplatnica-telo{
+  padding-left: 20px;
+  display: flex;
+  gap: 50px;
+}
+
+.box{
+  border: 1px solid black;
+  height: 50px;
+  width: 500px;
+}
+
+.first-line{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: end;
+  
+}
+.first-el{
+  width: 100px;
+}
+
+.second-line{
+  margin: 20px 0px;
+}
+
+.sifra-box{
+  border: 1px solid black;
+  height: 20px;
+  width: 100px;
+}
+
+.valuta-box{
+  border: 1px solid black;
+  height: 20px;
+  width: 100px;
+}
+
+.iznos-box{
+  border: 1px solid black;
+  height: 20px;
+  width:280px;
+}
+
+.racun-platioca-box{
+ border: 1px solid black;
+  height: 20px;
+  width: 500px;
+}
+.name{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.model-box{
+  border: 1px solid black;
+  height: 20px;
+  width: 50px;
+  float:left;
+}
+
+.pozivnabroj-box{
+border: 1px solid black;
+  height: 20px;
+  width: 400px; 
+  float: right;
+} 
+
+.potpis-i-pecat{
+  padding-left: 20px;
+} 
+
+.potpis-linija{
+  width: 250px;
+  position: relative; 
+  right: 410px;
+  
+}
+
+.mesto-i-datum{
+  display: flex;
+  justify-content:  center;
+  gap:40px
+}
+
+.mesto-linija{
+  width: 250px;
+}
+
+.datum-linija{
+  width: 250px;
+
+}
+
+.obrazac-br2{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
