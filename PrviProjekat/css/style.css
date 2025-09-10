@@ -7,7 +7,7 @@ body {
   width: 1100px;
   border: 1px solid black;
   padding: 10px;
-  font-family: monospace, sans-serif;
+  font-family: "Minecraftia", monospace, sans-serif;
 }
 header {
   text-align: end;
@@ -18,61 +18,66 @@ h1 {
 p {
   margin: 0;
 }
-.main-div {
+main {
   padding-left: 20px;
   display: flex;
 }
-.line {
-  margin: 25px;
-  height: 237px;
-  position: relative;
-  top: -7px;
-  background-color: black;
-  border: 1px solid black;
-}
-.box {
+
+.container input {
   border: 2px solid black;
   height: 50px;
   width: 500px;
   margin-bottom: 20px;
+  border-radius: none;
 }
-.first-line {
+
+#divider {
+  margin: 25px;
+  height: 243px;
+  position: relative;
+  bottom: 7px;
+  border: 1px solid black;
+}
+
+.amount-entry {
   display: flex;
   align-items: end;
 }
 
-.second-line {
-  margin: 5px 0px;
-}
-
-.code-box {
+.amount-entry__code {
   border: 3px solid black;
   height: 20px;
   width: 70px;
 }
 
-.currency-text {
+.amount-entry__currency-text {
   position: relative;
-  left: 25px;
+  left: 20px;
 }
 
-.currency-box {
+.amount-entry__currency-box {
   border: 3px solid black;
   height: 20px;
-  width: 70px;
-  margin-left: 25px;
+  width: 60px;
+  margin-left: 20px;
   margin-right: 30px;
 }
 
-.amount-box {
+.amount-entry__amount {
   border: 3px solid black;
   height: 20px;
   width: 310px;
 }
 
-.payers-acc {
+.payer-box {
+  margin: 5px 0px;
+}
+
+.payer-box__payers-acc {
+  position: relative;
   border: 3px solid black;
   height: 20px;
+  width: 505px;
 }
 
 .model-box {
@@ -83,18 +88,17 @@ p {
 
 .debt-box {
   position: relative;
-  top: -26px;
-  left: 100px;
+  left: 17px;
   border: 3px solid black;
   height: 20px;
   width: 417px;
 }
 
-.signature-container {
+.signature-box {
   padding-left: 20px;
 }
 
-.signature-line {
+.signature-box__signature-line {
   width: 300px;
   position: relative;
   right: 390px;
@@ -122,7 +126,7 @@ p {
 
 .date-line {
   position: relative;
-  top: -16px;
+  bottom: 16px;
   left: 130px;
   width: 150px;
   height: 2px;
@@ -132,11 +136,11 @@ p {
 
 .date-text {
   position: relative;
-  top: -27px;
+  bottom: 27px;
   left: 605px;
 }
 
-.footer-text {
+footer {
   position: relative;
   left: 500px;
 }
