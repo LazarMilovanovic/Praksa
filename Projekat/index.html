@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uplatnica</title>
+  </head>
+  <body>
+    <header><h1>НАЛОГ ЗА ИСПЛАТУ</h1></header>
+
+    <main>
+      <div class="container">
+        <p>платилац</p>
+        <input
+          type="text"
+          name="payer"
+          placeholder="Име и Презиме, Место становања, Град"
+          autocomplete="on"
+          required
+        />
+        <p>сврха исплате</p>
+        <input
+          type="text"
+          name="purpose"
+          placeholder="Сврха исплате"
+          autocomplete="on"
+          required
+        />
+        <p>прималац</p>
+        <input
+          type="text"
+          name="recipient"
+          placeholder="Име установе, Улица, Град"
+          autocomplete="on"
+          required
+        />
+      </div>
+
+      <div id="divider"></div>
+
+      <div>
+        <div class="amount-entry">
+          <div>
+            <p>шифра<br />плаћања</p>
+            <input
+              type="text"
+              name="code"
+              required
+              class="amount-entry__code"
+            />
+          </div>
+          <div>
+            <p class="amount-entry__currency-text">валута</p>
+            <input
+              type="text"
+              name="currency"
+              placeholder="РСД"
+              required
+              class="amount-entry__currency-box"
+            />
+          </div>
+          <div>
+            <p>износ</p>
+            <input
+              type="text"
+              name="amount"
+              placeholder="=1.250,00"
+              required
+              class="amount-entry__amount"
+            />
+          </div>
+        </div>
+        <div class="payer-box">
+          <p>рачун платиоца</p>
+          <input
+            type="text"
+            name="payers-acc"
+            autocomplete="on"
+            required
+            class="payer-box__payers-acc"
+          />
+        </div>
+        <p>модел и позив на број (задужење)</p>
+        <div>
+          <input type="text" name="model" required class="model-box" />
+          <input type="text" name="debt" required class="debt-box" />
+        </div>
+      </div>
+    </main>
+
+    <div class="signature-box">
+      <hr class="signature-box__signature-line" />
+      <p>печат и потпис платиоца</p>
+    </div>
+
+    <div>
+      <hr class="place-line" />
+      <p class="place-text">место и датум пријема</p>
+
+      <hr class="date-line" />
+      <p class="date-text">датум извршења</p>
+    </div>
+
+    <footer><p>Образац бр. 2</p></footer>
+  </body>
+</html>

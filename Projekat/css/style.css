@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Minecraftia";
+  src: url("fonts/Minecraftia.ttf") format("truetype");
+}
+
+:root {
+  --border-s: 1px solid black;
+  --border-m: 2px solid black;
+  --border-l: 3px solid black;
+}
+
+body {
+  width: 70em;
+  border: var(--border-s);
+  padding: 0.5em;
+  font-family: "Minecraftia", monospace, sans-serif;
+  overflow-x: hidden;
+}
+header {
+  text-align: end;
+}
+h1 {
+  margin: 5px;
+}
+p {
+  margin: 0;
+}
+main {
+  padding-left: 1.25em;
+  display: flex;
+}
+
+.container input {
+  border: var(--border-m);
+  height: 50px;
+  width: 500px;
+  margin-bottom: 20px;
+  border-radius: none;
+}
+
+#divider {
+  margin: 25px;
+  height: 243px;
+  position: relative;
+  bottom: 7px;
+  border: var(--border-s);
+}
+
+.amount-entry {
+  display: flex;
+  align-items: end;
+}
+
+.amount-entry__code {
+  border: var(--border-l);
+  height: 20px;
+  width: 70px;
+}
+
+.amount-entry__currency-text {
+  position: relative;
+  left: 20px;
+}
+
+.amount-entry__currency-box {
+  border: var(--border-l);
+  height: 20px;
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.amount-entry__amount {
+  border: var(--border-l);
+  height: 20px;
+  width: 310px;
+}
+
+.payer-box {
+  margin: 5px 0px;
+}
+
+.payer-box__payers-acc {
+  position: relative;
+  border: var(--border-l);
+  height: 20px;
+  width: 505px;
+}
+
+.model-box {
+  border: var(--border-l);
+  height: 20px;
+  width: 50px;
+}
+
+.debt-box {
+  position: relative;
+  left: 17px;
+  border: var(--border-l);
+  height: 20px;
+  width: 417px;
+}
+
+.signature-box {
+  padding-left: 20px;
+}
+
+.signature-box__signature-line {
+  width: 300px;
+  position: relative;
+  right: 400px;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.place-line {
+  position: relative;
+  top: 20px;
+  right: 160px;
+  width: 250px;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+.place-text {
+  position: relative;
+  left: 275px;
+  top: 10px;
+}
+
+.date-line {
+  position: relative;
+  bottom: 16px;
+  left: 120px;
+  width: 150px;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+.date-text {
+  position: relative;
+  bottom: 27px;
+  left: 605px;
+}
+
+footer {
+  position: relative;
+  left: 500px;
+}
