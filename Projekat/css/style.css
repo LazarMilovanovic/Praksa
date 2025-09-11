@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Basis33";
+  src: url("../fonts/Basis33.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --border-s: 1px solid black;
+  --border-m: 2px solid black;
+  --border-l: 3px solid black;
+  font-size: 16px;
+}
+input {
+  padding-left: 5px;
+}
+body {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 60rem;
+  border: var(--border-s);
+  padding: 0.5em;
+  font-family: "Basis33", monospace, serif;
+  font-size: 16px;
+  /* overflow-x: hidden; */
+}
+header {
+  text-align: end;
+}
+h1 {
+  margin-top: 10px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin: 0;
+}
+main {
+  padding-left: 1.25em;
+  display: flex;
+}
+
+.container {
+  border-right: var(--border-m);
+}
+
+.container input {
+  border: var(--border-m);
+
+  height: 50px;
+  width: 400px;
+  border-radius: none;
+}
+
+.container__purpose {
+  margin: 15px 25px 15px 0px;
+}
+
+.container__right-side {
+  margin-left: 25px;
+}
+
+.amount-entry {
+  display: flex;
+  align-items: end;
+}
+
+.amount-entry__code input {
+  border: var(--border-l);
+  height: 20px;
+  width: 70px;
+}
+
+.amount-entry__currency {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+.amount-entry__currency input {
+  border: var(--border-l);
+  height: 20px;
+  width: 60px;
+}
+
+.amount-entry__amount input {
+  border: var(--border-l);
+  height: 20px;
+  width: 248px;
+}
+
+.payer-box {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.payer-box input {
+  border: var(--border-l);
+  height: 20px;
+  width: 450px;
+}
+
+.model-box {
+  border: var(--border-l);
+  height: 20px;
+  width: 50px;
+}
+
+.debt-box {
+  margin-left: 17px;
+  border: var(--border-l);
+  height: 20px;
+  width: 365px;
+}
+
+.signature {
+  padding-left: 20px;
+}
+
+.signature__line {
+  width: 250px;
+  margin-top: 30px;
+  border: var(--border-s);
+}
+
+.place-date {
+  display: flex;
+
+  gap: 20px;
+}
+
+.place-date__place {
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 225px;
+}
+
+.place-date__place div {
+  width: 205px;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+.place-date__date {
+  margin-top: 20px;
+}
+
+.place-date__date div {
+  width: 150px;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+footer {
+  margin-left: 415px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1150px) {
+  body {
+    width: 35rem;
+    margin: none;
+  }
+
+  main {
+    display: block;
+  }
+  .container {
+    border: none;
+  }
+
+  .container input {
+    width: 520px;
+  }
+
+  .container__right-side {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .amount-entry__amount input {
+    width: 315px;
+  }
+  .payer-box input {
+    width: 517px;
+  }
+  .debt-box {
+    width: 430px;
+  }
+  .place-date__place {
+    margin-left: 20px;
+  }
+  footer {
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
