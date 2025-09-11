@@ -10,76 +10,57 @@
     <header><h1>НАЛОГ ЗА ИСПЛАТУ</h1></header>
 
     <main>
-      <div class="container">
+      <!-- LEVA STRANA -->
+      <div>
         <p>платилац</p>
-        <input
-          type="text"
-          name="payer"
-          placeholder="Име и Презиме, Место становања, Град"
-          autocomplete="on"
-          required
-        />
-        <p>сврха исплате</p>
-        <input
-          type="text"
-          name="purpose"
-          placeholder="Сврха исплате"
-          autocomplete="on"
-          required
-        />
-        <p>прималац</p>
-        <input
-          type="text"
-          name="recipient"
-          placeholder="Име установе, Улица, Град"
-          autocomplete="on"
-          required
-        />
+        <div class="container">
+          <input
+            type="text"
+            name="payer"
+            placeholder="Име и Презиме, Место становања, Град"
+            autocomplete="on"
+            required
+          />
+          <div class="container__purpose">
+            <p>сврха исплате</p>
+            <input
+              type="text"
+              name="purpose"
+              placeholder="Сврха исплате"
+              autocomplete="on"
+              required
+            />
+          </div>
+          <p>прималац</p>
+          <input
+            type="text"
+            name="recipient"
+            placeholder="Име установе, Улица, Град"
+            autocomplete="on"
+            required
+          />
+        </div>
       </div>
 
-      <div id="divider"></div>
-
-      <div>
+      <!-- DESNA STRANA -->
+      <div class="container__right-side">
         <div class="amount-entry">
-          <div>
+          <div class="amount-entry__code">
             <p>шифра<br />плаћања</p>
-            <input
-              type="text"
-              name="code"
-              required
-              class="amount-entry__code"
-            />
+            <input type="text" name="code" required />
           </div>
-          <div>
-            <p class="amount-entry__currency-text">валута</p>
-            <input
-              type="text"
-              name="currency"
-              placeholder="РСД"
-              required
-              class="amount-entry__currency-box"
-            />
+          <div class="amount-entry__currency">
+            <p>валута</p>
+            <input type="text" name="currency" placeholder="РСД" required />
           </div>
-          <div>
+          <div class="amount-entry__amount">
             <p>износ</p>
-            <input
-              type="text"
-              name="amount"
-              placeholder="=1.250,00"
-              required
-              class="amount-entry__amount"
-            />
+            <input type="text" name="amount" placeholder="=1.250,00" required />
           </div>
         </div>
         <div class="payer-box">
           <p>рачун платиоца</p>
-          <input
-            type="text"
-            name="payers-acc"
-            autocomplete="on"
-            required
-            class="payer-box__payers-acc"
-          />
+          <input type="text" name="payers-acc" autocomplete="on" required />
         </div>
         <p>модел и позив на број (задужење)</p>
         <div>
@@ -89,17 +70,20 @@
       </div>
     </main>
 
-    <div class="signature-box">
-      <hr class="signature-box__signature-line" />
+    <div class="signature">
+      <div class="signature__line"></div>
       <p>печат и потпис платиоца</p>
     </div>
 
-    <div>
-      <hr class="place-line" />
-      <p class="place-text">место и датум пријема</p>
-
-      <hr class="date-line" />
-      <p class="date-text">датум извршења</p>
+    <div class="place-date">
+      <div class="place-date__place">
+        <div></div>
+        <p>место и датум пријема</p>
+      </div>
+      <div class="place-date__date">
+        <div></div>
+        <p>датум извршења</p>
+      </div>
     </div>
 
     <footer><p>Образац бр. 2</p></footer>
